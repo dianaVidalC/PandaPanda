@@ -9,14 +9,15 @@ body{
 
 header,
 section,
-.contenido{
+.contenido,
+.parrafos{
   width: 90%;
-  margin: 100px auto;
+  margin: 80px auto;
   max-width: 1000px;
 }
 
 header nav{
-  background-color:rgb(227, 27, 39);
+  background-color:#ca3c25;
   overflow: hidden;
 }
 
@@ -38,7 +39,12 @@ header nav ul li a{
 header nav ul li a:hover{
   background-color:rgb(84, 241, 109);
 }
-img{
+
+div.imagenes{
+  display: inline-block;
+  position: relative;
+}
+div.imagenes img{
   border: 5px solid gray;
   width: 200px;
   height: 200px;
@@ -50,7 +56,7 @@ input[type="submit"]{
   width: 30%;
   padding: 10px;
   margin-bottom: 0;
-  background-color:rgb(227, 27, 39);
+  background-color:#ca3c25;
   color:#fff;
   border:none;
   }
@@ -59,3 +65,26 @@ input[type="submit"]:hover{
   background-color:rgb(84, 241, 109);
   cursor: pointer;
   padding: 10px;
+}
+
+.parrafos{
+  width: 100%;
+  color:#fff;
+}
+
+.parrafos div{
+  display: inline-block;
+  width:40%;
+  height: 300px;
+  margin :10px;
+}
+
+span{
+  position: absolute;
+  top: 15px;
+  left: 15px;
+  color:#fff;
+  font-weight: bold;
+  cursor: pointer;
+  font-size: 2em;
+}
