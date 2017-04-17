@@ -1,0 +1,42 @@
+*{
+  margin:0;
+  padding: 0;
+}
+body{
+  background: #000;
+  font-family: sans-serif;
+}
+
+header,
+section,
+.contenido{
+  width: 90%;
+  margin: 100px auto;
+  max-width: 1000px;
+}
+
+header nav{
+  background-color:rgb(227, 27, 39);
+  overflow: hidden;
+}
+
+header nav ul{
+  list-style: none;
+}
+
+header nav ul li{
+  float: left;
+}
+
+header nav ul li a{
+  padding: 20px 30px;
+  display:block;
+  color:#fff;
+  text-decoration: none;
+}
+img{
+  border: 2px solid gray;
+  width: 200px;
+  height: 200px;
+  margin:10px;
+}
