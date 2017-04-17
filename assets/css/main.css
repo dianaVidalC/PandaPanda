@@ -34,9 +34,28 @@ header nav ul li a{
   color:#fff;
   text-decoration: none;
 }
+
+header nav ul li a:hover{
+  background-color:rgb(84, 241, 109);
+}
 img{
-  border: 2px solid gray;
+  border: 5px solid gray;
   width: 200px;
   height: 200px;
   margin:10px;
 }
+
+input[type="submit"]{
+  display: inline-block;
+  width: 30%;
+  padding: 10px;
+  margin-bottom: 0;
+  background-color:rgb(227, 27, 39);
+  color:#fff;
+  border:none;
+  }
+
+input[type="submit"]:hover{
+  background-color:rgb(84, 241, 109);
+  cursor: pointer;
+  padding: 10px;
