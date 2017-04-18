@@ -7,12 +7,12 @@ for(var i=0; i<span.length;i++){
 
     padre.classList.add("close");
   });
-
-  document.getElementById("restaurar").addEventListener("click",function(event){
-    event.preventDefault();
-    var restaurar=document.getElementsByClassName("imagenes");
-
-      restaurar.classList.remove("close");
-
-  });
 }
+
+document.getElementById("restaurar").addEventListener("click",function(event){
+  event.preventDefault();
+  var restaurar=document.getElementsByClassName("imagenes")[i];
+
+    restaurar.classList.remove("close");
+
+});
