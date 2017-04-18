@@ -92,3 +92,7 @@ span{
 div.close{
   display: none;
 }
+
+.ocultar{
+  visibility: hidden;
+}

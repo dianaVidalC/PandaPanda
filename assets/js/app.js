@@ -11,8 +11,25 @@ for(var i=0; i<span.length;i++){
 
 document.getElementById("restaurar").addEventListener("click",function(event){
   event.preventDefault();
-  var restaurar=document.getElementsByClassName("imagenes")[i];
 
-    restaurar.classList.remove("close");
+  var mostrar=document.getElementsByClassName("imagenes");
 
+  for(var i=0; i<mostrar.length;i++){
+    if(mostrar[i].classList.contains("close")){
+      mostrar[i].classList.remove("close");
+
+    }
+  }
+});
+
+document.getElementById("origen").addEventListener("click",function(event){
+  event.preventDefault();
+
+  document.getElementById("columna1").classList.toggle("ocultar");
+});
+
+document.getElementById("historia").addEventListener("click",function(event){
+  event.preventDefault();
+
+  document.getElementById("columna2").classList.toggle("ocultar");
 });
