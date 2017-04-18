@@ -37,7 +37,33 @@
  
  A los divs con la clase imagenes les puse un display **inline-block** y **position:relative**,para que este´n uno al lado de otro y para que el **se posicione con relación al div que lo contiene.
  
- A los inputs le puse display inline-block, un ancho y un relleno.
+ A los inputs le puse display inline-block, un ancho y un relleno. Un color de fondo y color de letra de acuerdo al ejemplo, y sin bordes para crear el efecto de botón, también al hacer hover cambia de color de fondo y el cursor es **pointer**.
+ 
+ A los divs con clase .parrafos les doy un ancho de 100% y un color de letra blanca.
+ 
+ A los divs dentro de los de clase parrafo les doy **display:inline-block** y un ancho de 40% pa ra dar el efecto de dos colummnas.
+ 
+ Al **span** donde irán las **x** les puse **position:absolute** para que se posiciones del div que lo contiene y lo ubico en la esquina superior izquierda.
+ 
+ A los divs que tienen la clase .close les puse **display:none** para que no cree la caja.
+ 
+ y la clase **.ocultar** oculta la caja mas pero sigue ocupando su espacio, esto con **visibility:hidden**.
+ 
+ JAVASCRIPT
+ ----------
+ 
+ Llamo a todos los elementos span y los guardo en la variable **span**
+ 
+ Luego dentro de un **for** a los elementos de la lista que contiene la variable span, le aplico el metodo **addEventListener** cuando se le haga click, para que cuando esto suceda guarde al padre del span al que se le hizo click y a este se le agregue le clase **.close**, que quita la caja.
+ 
+ Luego cuando le haga click al botón restaurar, al cual lo llamo por su **id**, guardo todos los elementos con la clase **.imagenes** en la variable **mostrar**, y con un for y un if se comprueba si contiene la clase **.close**(classList.contains("close")), se le remueve(classList.remove("close").
+ 
+ Cuando se le hace click a cualquiera de los botones de le agrega y oculta la clase **ocultar**(classList.toggle("ocultar")).
+ 
+ 
+ 
+ 
+ 
  
  
  
